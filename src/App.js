@@ -6,7 +6,7 @@ import Header from './com/Header';
 function App() {
   return (
     <div>
-  <Header title="Code With Faiz"/>
+  <Header title="Code With Faiz" find={true}/>
     </div>
   );
 }

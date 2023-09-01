@@ -19,10 +19,10 @@ export default function Header(props) {
         </li>
       
       </ul>
-      <form class="d-flex">
+   { props.find ?  <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </form> : "Empty"}
     </div>
   </div>
 </nav>
