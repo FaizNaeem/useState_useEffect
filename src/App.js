@@ -4,13 +4,19 @@ import Header from './com/Header';
 import Footer from './com/Footer';
 import Todo from './Todo';
 import TodoItem from './com/TodoItem';
+import { useState } from 'react';
 // Header
 
 function App() {
-  const Dlt =()=>{
-console.log("hi");
+  
+  const Dlt =(todo)=>{
+console.log(todo);
+SetArrToObj(ArrToObj.filter((event)=>{
+  return event!== todo
+})
+)
   }
-  let ArrToObj=[
+  let [ArrToObj, SetArrToObj]= useState([
     {
     no:1,
     name:"Faiz",
@@ -31,7 +37,7 @@ console.log("hi");
     name:"Hello World",
     title:"HI I am Fourth Todo"
   },
-]
+])
   return (
     <div>
   <Header title="Code With Faiz" find={true}/>
