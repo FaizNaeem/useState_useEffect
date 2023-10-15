@@ -5,7 +5,7 @@ export default function Footer() {
     <div>
         <h3 align="center" style={{background:"black", color:"white"}}>
         © Faiz Naeem 2023
-            </h3>
+           </h3>
         </div>
   )
 }
